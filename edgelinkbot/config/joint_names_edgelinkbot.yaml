@@ -1,1 +1,0 @@
-controller_joint_names: ['', 'R_motor_joint', 'L_motor_joint', 'caster_fl_joint', 'caster_wheel_fl_joint', 'caster_fr_joint', 'caster_wheel_fr_joint', 'caster_br_joint', 'caster_wheel_br_joint', 'caster_bl_joint', 'caster_wheel_joint', ]
