@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="edgelinkbot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00696731732021785 -0.0090034121267864 0.0364233141185039"
+        rpy="0 0 0" />
+      <mass
+        value="2.50029446287432" />
+      <inertia
+        ixx="0.00829948294023925"
+        ixy="-0.000193329909064157"
+        ixz="-3.37223447457973E-06"
+        iyy="0.0107415543813641"
+        iyz="-2.51584710548057E-06"
+        izz="0.0184997684702892" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="R_motor_link">
+    <inertial>
+      <origin
+        xyz="-8.60422844084496E-16 0.327397966866354 0.000115879862118168"
+        rpy="0 0 0" />
+      <mass
+        value="0.289356764030316" />
+      <inertia
+        ixx="0.000215565671679599"
+        ixy="6.54732099343404E-19"
+        ixz="3.28321609907125E-21"
+        iyy="0.000340635119483454"
+        iyz="-1.60627717767865E-21"
+        izz="0.000215565671679599" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/R_motor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/R_motor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_motor_joint"
+    type="continuous">
+    <origin
+      xyz="0 -0.175 0.0255000000000001"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_motor_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="L_motor_link">
+    <inertial>
+      <origin
+        xyz="7.21644966006352E-16 -0.327397966866354 -0.000115879862118168"
+        rpy="0 0 0" />
+      <mass
+        value="0.289356764030316" />
+      <inertia
+        ixx="0.000215565671679599"
+        ixy="2.3747113970114E-22"
+        ixz="8.65333585907533E-22"
+        iyy="0.000340635119483454"
+        iyz="3.50884930732294E-21"
+        izz="0.000215565671679599" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/L_motor_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/L_motor_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_motor_joint"
+    type="continuous">
+    <origin
+      xyz="0 0.175 0.025616"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_motor_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="caster_fl_link">
+    <inertial>
+      <origin
+        xyz="0.00555694201903228 -8.48278855126172E-05 -0.00491960533542843"
+        rpy="0 0 0" />
+      <mass
+        value="0.00702028303224215" />
+      <inertia
+        ixx="1.97342211410058E-06"
+        ixy="-1.92439546284557E-09"
+        ixz="2.36927161015266E-07"
+        iyy="1.52832706823907E-06"
+        iyz="-3.44383195535888E-09"
+        izz="2.51096219721311E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_fl_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_fl_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_fl_joint"
+    type="continuous">
+    <origin
+      xyz="0.121 0.09575 0.03612"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_fl_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="caster_wheel_fl_link">
+    <inertial>
+      <origin
+        xyz="-5.55111512312578E-17 0 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430615244083842" />
+      <inertia
+        ixx="8.29709714565463E-06"
+        ixy="6.21453112662801E-08"
+        ixz="2.36482232947536E-21"
+        iyy="1.25716382734955E-05"
+        iyz="-1.69498041910481E-21"
+        izz="8.2961938384614E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_fl_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_fl_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_wheel_fl_joint"
+    type="continuous">
+    <origin
+      xyz="0.0219976763106033 -0.000319745107726421 -0.03412"
+      rpy="0 0 0" />
+    <parent
+      link="caster_fl_link" />
+    <child
+      link="caster_wheel_fl_link" />
+    <axis
+      xyz="0.0145338685330141 0.999894377754703 0" />
+  </joint>
+  <link
+    name="caster_fr_link">
+    <inertial>
+      <origin
+        xyz="0.00555488050967479 0.000167500058819436 -0.00632460533542847"
+        rpy="0 0 0" />
+      <mass
+        value="0.00702028303224219" />
+      <inertia
+        ixx="1.97332390175124E-06"
+        ixy="4.08578003373284E-09"
+        ixz="2.36839265989836E-07"
+        iyy="1.52842528058844E-06"
+        iyz="7.31448499132989E-09"
+        izz="2.51096219721312E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_fr_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_fr_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_fr_joint"
+    type="continuous">
+    <origin
+      xyz="0.121 -0.09625 0.037525"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_fr_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="caster_wheel_fr_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430615244083842" />
+      <inertia
+        ixx="8.30026875831885E-06"
+        ixy="-1.31943811375545E-07"
+        ixz="4.01636705035217E-22"
+        iyy="1.25684666608312E-05"
+        iyz="-1.59593558706444E-21"
+        izz="8.2961938384614E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_fr_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_fr_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_wheel_fr_joint"
+    type="continuous">
+    <origin
+      xyz="0.0219895156324024 0.000679118732225148 -0.035525"
+      rpy="0 0 0" />
+    <parent
+      link="caster_fr_link" />
+    <child
+      link="caster_wheel_fr_link" />
+    <axis
+      xyz="-0.0308690332828908 0.999523437836342 0" />
+  </joint>
+  <link
+    name="caster_br_link">
+    <inertial>
+      <origin
+        xyz="0.00554806966014744 -0.000328172488371747 -0.00491960533542848"
+        rpy="0 0 0" />
+      <mass
+        value="0.00702028303224219" />
+      <inertia
+        ixx="1.97299968520988E-06"
+        ixy="-7.70973067225906E-09"
+        ixz="2.36548876916728E-07"
+        iyy="1.52874949712981E-06"
+        iyz="-1.38191329224037E-08"
+        izz="2.51096219721312E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_br_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_br_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_br_joint"
+    type="continuous">
+    <origin
+      xyz="-0.121 -0.09625 0.03612"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_br_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="caster_wheel_br_link">
+    <inertial>
+      <origin
+        xyz="0 -5.55111512312578E-17 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430615244083843" />
+      <inertia
+        ixx="8.3107388193172E-06"
+        ixy="2.48973572041881E-07"
+        ixz="1.38603517839785E-21"
+        iyy="1.25579965998329E-05"
+        iyz="-1.62550920920244E-21"
+        izz="8.29619383846141E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_br_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_br_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_wheel_br_joint"
+    type="continuous">
+    <origin
+      xyz="0.0219625542455878 -0.00128304754768349 -0.03412"
+      rpy="0 0 0" />
+    <parent
+      link="caster_br_link" />
+    <child
+      link="caster_wheel_br_link" />
+    <axis
+      xyz="0.0583203430765141 0.998297920253988 0" />
+  </joint>
+  <link
+    name="caster_bl_link">
+    <inertial>
+      <origin
+        xyz="0.00555573748123371 -0.000145157659774853 -0.0049196053354284"
+        rpy="0 0 0" />
+      <mass
+        value="0.00702028303224216" />
+      <inertia
+        ixx="1.97336472430014E-06"
+        ixy="-3.36101849857335E-09"
+        ixz="2.36875804042283E-07"
+        iyy="1.52838445803953E-06"
+        iyz="-6.016067204845E-09"
+        izz="2.51096219721312E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_bl_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_bl_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_bl_joint"
+    type="continuous">
+    <origin
+      xyz="-0.121 0.09575 0.03612"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="caster_bl_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="caster_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 0 2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.0430615244083843" />
+      <inertia
+        ixx="8.29895045859429E-06"
+        ixy="1.08538782593283E-07"
+        ixz="-8.55941061891113E-23"
+        iyy="1.25697849605558E-05"
+        iyz="-1.57793686514242E-21"
+        izz="8.29619383846142E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/caster_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.02199290803472 -0.000558566179023057 -0.03412"
+      rpy="0 0 0" />
+    <parent
+      link="caster_bl_link" />
+    <child
+      link="caster_wheel_link" />
+    <axis
+      xyz="0.0253893717737699 0.999677637941818 0" />
+  </joint>
+  <link
+    name="lidar_link">
+    <inertial>
+      <origin
+        xyz="0.00577265858294868 0.000571104004925105 -0.0192534162964028"
+        rpy="0 0 0" />
+      <mass
+        value="0.14092250334185" />
+      <inertia
+        ixx="4.47011677227243E-05"
+        ixy="-5.73365776755427E-07"
+        ixz="3.7831029954513E-06"
+        iyy="7.04889269829893E-05"
+        iyz="-2.45426224626736E-07"
+        izz="0.000104059454862497" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/lidar_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.101960784313725 0.101960784313725 0.101960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://edgelinkbot/meshes/lidar_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.000118423174117921 0.000323856797271926 0.11985"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="lidar_link" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
