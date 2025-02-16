@@ -1,2 +1,0 @@
-# EdgelinkROBOT
- ROBOT_URDF
